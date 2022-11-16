@@ -7,3 +7,4 @@ This is a utility made to take a collection of images, convert them to text and 
 - Tesseract at UB Mannheim Github Binary Installs: https://github.com/UB-Mannheim/tesseract/wiki
 - Create a directory in Python: https://www.geeksforgeeks.org/create-a-directory-in-python/
 - Loop through items in a directory: https://www.geeksforgeeks.org/how-to-iterate-over-files-in-directory-using-python/
+- python gui with tkinter: https://realpython.com/python-gui-tkinter/
