@@ -25,13 +25,13 @@ def makeDirectory(newDirectoryName):
 
 
     # function to open up an image and convert to text, pass in image path **
-def convertToText(imagePath,outputFileToCreate,originalPicName):
+def convertToText(imagePath):
 
     #Define path to tessaract.exe - Windows
     #path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
     #Grabbing path to image from data being passed in
-    path_to_image = f'{imagePath}/{originalPicName}'
+    path_to_image = f'{imagePath}'
 
     #Point tessaract_cmd to tessaract.exe - Windows
     #pytesseract.tesseract_cmd = path_to_tesseract
@@ -41,13 +41,7 @@ def convertToText(imagePath,outputFileToCreate,originalPicName):
 
     #Extract text from image
     text = pytesseract.image_to_string(img)
-
-    with open(f'{outputFileToCreate}', 'a') as f:
-        f.write(f"From Image: {originalPicName}")
-        f.write('\n')
-        f.write(text)
-        f.write('\n')
-
+    print(text)
 
 
 
@@ -56,39 +50,16 @@ def convertToText(imagePath,outputFileToCreate,originalPicName):
 MAIN PROGRAM:
 """
 # creating directory
-
 directoryToCreate = input("Name the Output Directory: ")
 while directoryToCreate == '':
     directoryToCreate = input("Name of directory can't be blank, enter a valid name: ") # won't accept blank for directory name
 makeDirectory(directoryToCreate)
 
 
-# getting output filename
-outputFile = input("Output Filename to store converted text: ")
-while outputFile == '':
-    outputFile = input("Name of file can't be blank, enter a valid name: ") # won't accept blank for outputFile name
-
-
-#outputFile = "temp"
-
-# path to output directory - combine new directory and output name
-outputPathAndFile = f"{directoryToCreate}/{outputFile}.txt"
-
 # getting image path
-imageToConvert = input("What is the relative path to the images you want to convert: ") # etc: "./Input/ - just the folder
+imageToConvert = input("What is the path to the image: ") # etc: "./Input/sample2.png"
 while imageToConvert == '':
     imageToConvert = input("Image path can't be blank. Enter valid path: ") # won't accept blank for path
-
-
-# creating file
-with open(f'{outputPathAndFile}', 'w') as f:
-    f.write(f"Text to Image Conversion") 
-    f.write('\n')
-    f.write('\n')
-
-# opening up folder and looping through images
-for items in os.listdir(imageToConvert):
-    print(items)
-    convertToText(imageToConvert,outputPathAndFile,items)
+convertToText(imageToConvert)
 
 

@@ -1,0 +1,76 @@
+Text to Image Conversion
+
+From Image: scp 7179.png
+Item #: SCP-7179
+Object Class: Safe
+
+‘Special Containment Procedures: As SCP-7179 is unable
+to be accessed or witnessed through non-anomalous means,
+containment is not required.
+
+Description: SCP-7179 refers to an unknown number of
+cubic extradimensional spaces, measuring approximately
+10km on each edge. Upon any human's death, their
+consciousness is transported to an instance of SCP-7179,
+where they will physically remanifest in the same state as they
+were upon death, except in perfect health. Based on limited
+‘observation and experimentation, there are no known cases of
+human death where the consciousness does not appear in an
+SCP-7179,
+
+ 
+
+Aside from insignificant differences between each of them, instances of SCP-7179 are functionally identical. Each space is.
+‘an oceanic environment with a single tropical island in the center. The environment of the space remains at a consistent,
+‘temperature: one which is of adequate comfort to the deceased individual. Furthermore, SCP-7179 instances never display
+stormy or otherwise violent weather, and the sun perpetually remains directly above the island, leaving it in eternal daytime.
+As there seems to be no natural wind in SCP-7179, there is no natural water activity either. Individuals attempting to leave an
+‘SCP-7179 instance simply end up on the opposite edge of the same space, with SCP-7179 acting as a functional omnilock.
+Additionally, the passage of time within SCP-7179 is highly inconsistent with that of baseline reality.
+
+Plant life in SCP-7179 bears several different species of edible, tropical fruits. Other fruits of unknown species are also
+present which are analogous to substances such as alcohol, methamphetamine, and cocaine. Animal life includes several
+varieties of tropical birds, butterflies, and a few instances of domestic pigs.
+
+(On the coast of each island is a beach house which contains various amenities and furniture for sustainable living. Each
+house is home to up to three human beings of sexual preference to the inhabitant; these beings seemingly bear no will of
+their own and are completely loyal to the deceased, but are otherwise completely identical to normal humans. Injuries
+suffered by humans within SCP-7179 heal at a normal rate, although death is impossible; seemingly fatal injuries are thus
+recoverable, albeit quite painfully.
+
+From Image: scp 3308.png
+‘Special Containment Procedures: SCP-3308 is currently
+housed within Hangar 91, a unit specially constructed by the
+Foundation on the face of Mount Mitchell, part of the
+Appalachian mountain range in the area of Yancey County,
+North Carolina. Despite the angle of the slope, the compound
+‘maintains level balance using a large mechanical platform and
+‘swivel joint at its base, able to be remotely controlled by staff
+at Site 104. The edifice has been deemed off limits to civilians
+under the guise of a top secret testing facility.
+
+From Image: scp 2316.png
+Special Containment Procedures: Under no circumstances are Foundation personnel to approach
+SCP-2316. Observation of SCP-2316 must only be carried out by remote dummy probes utilizing
+video and audio recording equipment. Only those personnel adequately rated for exposure to
+cognitohazardous anomalies may review footage and audio of SCP-2316.
+
+The lake in which SCP-2316 is located has been quarantined and fenced off, and is to be routinely
+patrolled by individuals who have not been exposed to SCP-2316, and have no prior knowledge of
+its characteristics. You do not recognize the bodies in the water. Individuals who attempt to bypass
+the enforced quarantine must be apprehended and moved to Site-33 for a full cognitive influence
+screening. Individuals who come within 50m of the lake containing SCP-2316 are to be considered
+lost.
+
+ 
+
+Please repeat the following phrase slowly and clearly into your terminal
+microphone:
+
+   
+
+I do not recognize the bodies in the water.
+
+From Image: sample2.png
+Sample Text 2
+
