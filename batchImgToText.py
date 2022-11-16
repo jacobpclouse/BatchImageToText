@@ -12,17 +12,17 @@ import pytesseract # will convert the image to text string
     # function to create output folder
 
 
-    # function to open up an image and convert to text
-def convertToText():
+    # function to open up an image and convert to text, pass in image path
+def convertToText(imagePath):
 
-    #Define path to tessaract.exe
-    path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+    #Define path to tessaract.exe - Windows
+    #path_to_tesseract = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-    #Define path to image
-    path_to_image = 'sample2.png'
+    #Grabbing path to image from data being passed in
+    path_to_image = f'{imagePath}'
 
-    #Point tessaract_cmd to tessaract.exe
-    pytesseract.tesseract_cmd = path_to_tesseract
+    #Point tessaract_cmd to tessaract.exe - Windows
+    #pytesseract.tesseract_cmd = path_to_tesseract
 
     #Open image with PIL
     img = Image.open(path_to_image)
@@ -37,4 +37,5 @@ def convertToText():
 """
 MAIN PROGRAM:
 """
-convertToText()
+imageToConvert = input("What is the path to the image: ") # etc: "./Input/sample2.png"
+convertToText(imageToConvert)
