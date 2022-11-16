@@ -5,6 +5,7 @@ from PIL import Image # Imports PIL module
 import pytesseract # will convert the image to text string
 import os # used to create folder and traverse directory paths and the files within
 import datetime # used to get the date and time
+import tkinter as tk # used to create the GUI
 
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -56,8 +57,30 @@ def convertToText(imagePath,outputFileToCreate,originalPicName):
 """
 MAIN PROGRAM:
 """
-# creating directory
 
+
+
+import tkinter as tk
+
+window = tk.Tk()
+
+frame_a = tk.Frame()
+frame_b = tk.Frame()
+
+label_a = tk.Label(master=frame_a, text="I'm in Frame A")
+label_a.pack()
+
+label_b = tk.Label(master=frame_b, text="I'm in Frame B")
+label_b.pack()
+
+frame_a.pack()
+frame_b.pack()
+
+window.mainloop()
+
+
+'''
+# creating directory
 directoryToCreate = input("Name the Output Directory: ")
 while directoryToCreate == '':
     directoryToCreate = input("Name of directory can't be blank, enter a valid name: ") # won't accept blank for directory name
@@ -70,7 +93,6 @@ while outputFile == '':
     outputFile = input("Name of file can't be blank, enter a valid name: ") # won't accept blank for outputFile name
 
 
-#outputFile = "temp"
 
 # path to output directory - combine new directory and output name
 outputPathAndFile = f"{directoryToCreate}/{outputFile}.txt"
@@ -93,3 +115,4 @@ for items in os.listdir(imageToConvert):
     convertToText(imageToConvert,outputPathAndFile,items)
 
 
+'''
