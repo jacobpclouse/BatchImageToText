@@ -1,5 +1,5 @@
 # BatchImageToText
-
+This is a utility made to take a collection of images, convert them to text and then store that text in a single text file to be used later. Helpful for collecting written notes into text.
 
 ## Resources Used:
 - Extract Text from Image using Python: https://python-bloggers.com/2022/05/extract-text-from-image-using-python/

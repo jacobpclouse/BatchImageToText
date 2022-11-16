@@ -3,8 +3,8 @@
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 from PIL import Image # Imports PIL module 
 import pytesseract # will convert the image to text string
-import os # used to create folder and traverse directory paths and the files within
-import datetime # used to get the date and time
+import os
+
 
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -43,8 +43,7 @@ def convertToText(imagePath,outputFileToCreate,originalPicName):
     text = pytesseract.image_to_string(img)
 
     with open(f'{outputFileToCreate}', 'a') as f:
-        f.write('\n')
-        f.write(f"*** From Image: {originalPicName} *** ")
+        f.write(f"From Image: {originalPicName}")
         f.write('\n')
         f.write(text)
         f.write('\n')
@@ -83,7 +82,7 @@ while imageToConvert == '':
 
 # creating file
 with open(f'{outputPathAndFile}', 'w') as f:
-    f.write(f"Text to Image Conversion - Run: {datetime.datetime.now()}") 
+    f.write(f"Text to Image Conversion") 
     f.write('\n')
     f.write('\n')
 
