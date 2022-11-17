@@ -6,7 +6,7 @@ import pytesseract # will convert the image to text string
 import os # used to create folder and traverse directory paths and the files within
 import datetime # used to get the date and time
 import tkinter as tk # used to create the GUI
-
+from tkinter import ttk
 
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Functions
@@ -58,25 +58,48 @@ def convertToText(imagePath,outputFileToCreate,originalPicName):
 MAIN PROGRAM:
 """
 
+class App(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title('Batch Image Conver Utility')
+        self.geometry("400x100")
 
+        self.name_var = tk.StringVar()
 
-import tkinter as tk
+        self.columnconfigure(0, weight=1)
+        self.columnconfigure(1, weight=1)
+        self.columnconfigure(2, weight=1)
 
-window = tk.Tk()
+        self.create_widgets()
 
-frame_a = tk.Frame()
-frame_b = tk.Frame()
+    def create_widgets(self):
 
-label_a = tk.Label(master=frame_a, text="I'm in Frame A")
-label_a.pack()
+        padding = {'padx': 5, 'pady': 5}
+        # label
+        ttk.Label(self, text='Name:').grid(column=0, row=0, **padding)
 
-label_b = tk.Label(master=frame_b, text="I'm in Frame B")
-label_b.pack()
+        # Entry
+        name_entry = ttk.Entry(self, textvariable=self.name_var)
+        name_entry.grid(column=1, row=0, **padding)
+        name_entry.focus()
 
-frame_a.pack()
-frame_b.pack()
+        # Button
+        submit_button = ttk.Button(self, text='Submit', command=self.submit)
+        submit_button.grid(column=2, row=0, **padding)
 
-window.mainloop()
+        # Output label
+        self.output_label = ttk.Label(self)
+        self.output_label.grid(column=0, row=1, columnspan=3, **padding)
+
+    def submit(self):
+        self.output_label.config(text=self.name_var.get())
+        storedVar = self.name_var.get()
+        print(storedVar)
+        
+
+if __name__ == "__main__":
+    app = App()
+    app.mainloop()
 
 
 '''
