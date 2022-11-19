@@ -11,3 +11,4 @@ This is a utility made to take a collection of images, convert them to text and 
 - How to Get the Input From Tkinter Text Box?: https://www.geeksforgeeks.org/how-to-get-the-input-from-tkinter-text-box/
 - Tkinter StringVar: https://www.pythontutorial.net/tkinter/tkinter-stringvar/
 - Tkinter Video Series: https://www.youtube.com/watch?v=YR3h2CY21-U&list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV&index=20
+- img = Image.open(fp) AttributeError: class Image has no attribute 'open': https://stackoverflow.com/questions/10748822/img-image-openfp-attributeerror-class-image-has-no-attribute-open
