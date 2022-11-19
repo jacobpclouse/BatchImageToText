@@ -10,3 +10,4 @@ This is a utility made to take a collection of images, convert them to text and 
 - python gui with tkinter: https://realpython.com/python-gui-tkinter/
 - How to Get the Input From Tkinter Text Box?: https://www.geeksforgeeks.org/how-to-get-the-input-from-tkinter-text-box/
 - Tkinter StringVar: https://www.pythontutorial.net/tkinter/tkinter-stringvar/
+- Tkinter Video Series: https://www.youtube.com/watch?v=YR3h2CY21-U&list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV&index=20

@@ -12,7 +12,7 @@ from tkinter import ttk
 # Functions
 # =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-# --- Function to create output folder **
+# function to create output folder **
 def makeDirectory(newDirectoryName):
     parentDirectory = "./"
 
@@ -25,7 +25,7 @@ def makeDirectory(newDirectoryName):
 
 
 
-# --- Function to open up an image and convert to text, pass in image path **
+# function to open up an image and convert to text, pass in image path **
 def convertToText(imagePath,outputFileToCreate,originalPicName):
 
     #Define path to tessaract.exe - Windows
@@ -51,7 +51,7 @@ def convertToText(imagePath,outputFileToCreate,originalPicName):
         f.write('\n')
 
 
-# --- Function to get input from user
+# function to get input from user
 def getInput(messageOnWhatToGet,errorMessage):
     outputFromUser = input(f"{messageOnWhatToGet}: ") # Main Output message
     while outputFromUser == '':
@@ -59,61 +59,52 @@ def getInput(messageOnWhatToGet,errorMessage):
     return outputFromUser
 
 
-# --- Function to print out my Logo ---
-def myLogo():
-    print("Created and Tested by: ")
-    print("   __                  _         ___ _                       ")
-    print("   \ \  __ _  ___ ___ | |__     / __\ | ___  _   _ ___  ___  ")
-    print("    \ \/ _` |/ __/ _ \| '_ \   / /  | |/ _ \| | | / __|/ _ \ ")
-    print(" /\_/ / (_| | (_| (_) | |_) | / /___| | (_) | |_| \__ \  __/ ")
-    print(" \___/ \__,_|\___\___/|_.__/  \____/|_|\___/ \__,_|___/\___| ")
-
-
 """
--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=-
--=-=-=-=--=-=-=-=--=-=-=-=-       MAIN PROGRAM      -=-=-=-=--=-=-=-=--=-=-=-=-=
--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=--=-=-=-=-
+MAIN PROGRAM:
 """
-# Storing Message: Creating Output Directory Name
 createDirectoryMessage = 'Name the Output Directory'
 createDirectoryMessageError = 'Name of directory can not be blank, enter a valid name'
+
 directoryToCreate = getInput(createDirectoryMessage,createDirectoryMessageError)
+
 print(directoryToCreate)
-# Making Directory
+
+
+
+'''
+# creating directory
+directoryToCreate = input("Name the Output Directory: ")
+while directoryToCreate == '':
+    directoryToCreate = input("Name of directory can't be blank, enter a valid name: ") # won't accept blank for directory name
 makeDirectory(directoryToCreate)
 
 
-# Storing Message: Creating Output File Name 
-createOutputFileMessage = 'Output Filename to store converted text'
-createOutputFileMessageError = 'Name of file can not be blank, enter a valid name'
-outfileToCreate = getInput(createOutputFileMessage,createOutputFileMessageError)
+# getting output filename
+outputFile = input("Output Filename to store converted text: ")
+while outputFile == '':
+    outputFile = input("Name of file can't be blank, enter a valid name: ") # won't accept blank for outputFile name
+
+
+
 # path to output directory - combine new directory and output name
-outputPathAndFile = f"{directoryToCreate}/{outfileToCreate}.txt"
-print(outputPathAndFile)
+outputPathAndFile = f"{directoryToCreate}/{outputFile}.txt"
+
+# getting image path
+imageToConvert = input("What is the relative path to the images you want to convert: ") # etc: "./Input/ - just the folder
+while imageToConvert == '':
+    imageToConvert = input("Image path can't be blank. Enter valid path: ") # won't accept blank for path
 
 
-# Storing Message: Getting Path to Image to Convert
-getImgToConvertMessage = 'What is the relative path to the images you want to convert? (etc: "./Input/" - just the folder)'
-getImgToConvertMessageError = 'Image path can not be blank. Enter valid path'
-imageToConvert = getInput(getImgToConvertMessage,getImgToConvertMessageError)
 # creating file
 with open(f'{outputPathAndFile}', 'w') as f:
     f.write(f"Text to Image Conversion - Run: {datetime.datetime.now()}") 
     f.write('\n')
     f.write('\n')
 
-
 # opening up folder and looping through images
 for items in os.listdir(imageToConvert):
     print(items)
     convertToText(imageToConvert,outputPathAndFile,items)
 
-# Print out my logo
-myLogo()
-
-
-'''
-
-Created and tested by Jacob Clouse (with help with online sources as always in the README file)
 
 '''
