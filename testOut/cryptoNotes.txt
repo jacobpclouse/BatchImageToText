@@ -1,0 +1,233 @@
+Text to Image Conversion - Run: 2022-11-19 20:12:07.033398
+
+
+*** From Image: b.png *** 
+Second Edition
+
+ 
+
+Introduction to Cryptography
+with Coding Theory
+
+ 
+
+
+*** From Image: h.png *** 
+16.8 Computer Problems
+1. Let £ be the elliptic curve y? = 2° +22 +3 (mod 19).
+(a) Find the sum (1,5) + (9,3).
+(b) Find the sum (9,3) + (9, —3).
+(c) Using the result of part (b), find the difference (1,5) — (9, 3).
+(d) Find an integer / such that k(1,5) = (9,3).
+
+(e) Show that (1,5) has exactly 20 distinct multiples, including oo.
+(f)] Using (e) and Exercise 11(d), show that the number of points
+
+on & is a multiple of 20. Use Hasse’s theorem to show that &
+has exactly 20 points.
+
+2. You want to represent the message 12345 as a point (x, y) on the curve
+
+
+*** From Image: g.png *** 
+un
+
+. if the leftmost semLen — embits bits of the leftmost octet in maskedDB are
+
+not all equal to zero, output “inconsistent” and stop
+
+. Calculate dbMask = MGF (H,emLen — hLen — 1)
+
+7. Calculate DB = maskedDB ® dbMsk
+
+10.
+11.
+12.
+
+13.
+
+. Set the leftmost 8emLen — emBits bits of the leftmost octet in DB to zero
+. If the leftmost (emLen — hLen — sLen — 1) octets of DB are not equal to
+
+padding), output “inconsistent” and stop
+
+Let salt be the last sLen octets of DB
+
+Form block M' = padding, || mHash || salt
+
+Generate the hash value of M’: H’ = Hash(M’)
+
+If H = H’, output “consistent.” Otherwise, output “inconsistent”
+
+Figure 13.7 illustrates the process. The shaded boxes labeled H and H' cor-
+
+respond, respectively, to the value contained in the decrypted signature and the
+value generated from the message M associated with the signature. The remaining
+three shaded areas contain values generated from the decrypted signature and com-
+pared to known constants. We can now see more clearly the different roles played
+by the constants and the pseudorandom value salt, all of which are embedded in the
+
+
+*** From Image: c.png *** 
+connectivity and the need to maintain a high level of resilience, without requiring
+an excessive number of keys to be stored.
+We provide a small example to illustrate the concepts introduced above.
+
+Example 11.4 Suppose we have a network U with m = 12 nodes, denoted
+U,,...,U;2. Suppose there are a total of 9 keys, denoted Kj,...,Ko, and each node
+has exactly three nodes in its keyring, as follows:
+
+ 
+
+node _ keyring | node _ keyring | node _ keyring
+Uy, Kj, Ky, Ks Up —-K4, Ks, Ke U3 Kz, Kg, Ko
+Ug Ki, Ky, K7 Us Kz, Ks, Kg Us Ks, Ke, Ko
+Uz Ki, Ks, Ko Ug Ka, Ko, Kz Uy K3, Ka, Kg
+
+Uyo Ki, Ko, Kg Uy1 Kz, K4, Ko Uy. Ks, Ks, Kg
+
+
+*** From Image: a.png *** 
+RipT TL Uk eS a oe Co eS Ei
+
+C= ae oe)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Se” oO )
+Index w
+ee
+lee) o Cr. . .
+es For Tricia: never dull, never boring,
+About t. 8
+cane the smartest and bravest person
+ne)
+fee cry
+mm I know
+rere
+nel ie Vice President and Editorial Director, ECS: Inventory Manager: Meredith Maresca
+aes Marcia J. Horton Senior Manufacturing Controller, Global Editions:
+Gans > Executive Editor: Tracy Johnson (Dunkelberger) Trudy Kimber
+Genes f Editorial Assistant: Kristy Alaura Media Production Manager, Global Editions:
+ee Acquisitions Editor, Global Editions: A bhijit Baroi Vikram Kumar
+cee Program Manager: Carole Snyder Product Marketing Manager: Bram Van Kempen
+rig Project Manager: Robert Engelhardt Marketing Assistant: Jon Bryant
+ears 9 Project Editor, Global Editions: K.K. Neelakantan Cover Designer: Lumina Datamatics
+rd Media Team Lead: Steve Wright Cover Art: © goghy73 / Shutterstock
+Sree uy R&P Manager: Rachel Youdelma Full-Service Project Management:
+Sie R&P Senior Project Manager: William Opaluch Chandrakala Prakash, SPi Global
+oe i n Senior Operations Specialist: Maura Zaldivar-Garcia Composition: SPi Global
+i ’ Inventory Manager: Meredith Maresca
+rere ce
+ee o
+
+Credits and acknowledgments borrowed from other sources and reproduced, with permission, in this textbook
+
+
+*** From Image: f.png *** 
+ 
+
+Protocol 11.4: LEE-STINSON LINEAR KPS
+1. Let p bea prime number and let k < p.
+
+2. There are kp keys in the scheme, denoted Kj ;,0 <i<k—-1,0<j<p-l.
+
+i,jr
+3. There are Pp nodes in the network, denoted as U;,»,0 < a,b < p—1.
+
+4. There are k keys to given to each node by the TA. The keys given to Uy,» are
+
+Kaito mod p/
+
+ 
+
+O0<i<k-1.
+
+ 
+
+ 
+
+This scheme satisfies two important properties:
+1. Each key is contained in four nodes, and
+
+2. two nodes have exactly zero or one common key.
+
+
+*** From Image: e.png *** 
+Held wito p° cements. (itemark: 1 his 1S Che reason Supersingular
+curves became unpopular.)
+
+21. Suppose you try to set up an identity-based cryptosystem as follows.
+Arthur chooses large primes p and g and forms n = pq, which is made
+public. For each User, he converts the User's identification ID to
+a number €Uger by some public method and then computes d with
+deyser = 1 (mod ¢(n)). Arthur gives d to the User. The integer n
+is the same for all users. When Alice wants to send an email to Bob,
+she uses the public method to convert his email address to ego, and
+then uses this to encrypt messages with RSA. Bob knows d, so he can
+decrypt. Explain why this system is not secure.
+
+16.8 Computer Problems
+
+1. Let EF be the ellintic curve 77 = 7° +9742 (mod 19).
+
+
+*** From Image: d.png *** 
+CONTENTS
+
+ 
+
+Notation 10
+Preface 12
+About the Author 18
+
+PART ONE: BACKGROUND 19
+Chapter 1 Computer and Network Security Concepts 19
+
+11 Computer Security Concepts 21
+
+12 The OSI Security Architecture 26
+
+13 Security Attacks 27
+
+14 Security Services 29
+
+15 Security Mechanisms 32
+
+1.6 Fundamental Security Design Principles 34
+17 Attack Surfaces and Attack Trees 37
+
+18 A Model for Network Security 41
+
+19 Standards 43
+
+
+*** From Image: i.png *** 
+generic algorithm. That is, we assume that we have some method of performing
+group operations on encoded elements, but we cannot do any more than that.
+Now let us consider how a generic algorithm, say GENLOG, can go about trying
+to compute a discrete logarithm. The input to the algorithm GENLOG consists of
+a, = o(1) and oy = o(a), where a € Z, is chosen randomly. GENLOG will be
+successful if and only if it outputs the value a. (We will assume that 1 is prime, in
+order to simplify the analysis.)
+
+GENLOG will use the oracle to generate a sequence of m, say, encodings of
+linear combinations of 1 and a. The execution of GENLOG can be specified by a
+list of ordered pairs (c;,d;) € Zn xX Zn, 1 < m. (We can assume that these m
+ordered pairs are distinct.) For each ordered pair (c;,d;), the oracle computes the
+encoding 0; = o((c; + dja) mod n). Note that we can define (c1,d,) = (1,0) and
+(c2,dz) = (0,1) so our notation is consistent with the input to the algorithm.
+
+In this way, the algorithm GENLOG obtains a list of encoded group elements,
+(0,...,0m). Because the encoding function ¢ is injective, it follows immediately
+that cj + dja = c; + dja (mod n) if and only if 0; = oj. This provides a method
+to possibly compute the value of the unknown a: Suppose that 7; = 0; for two
+integers i # j. If dj = dj, then c; = c; and the two ordered pairs (c;,d;) and (c;,d;)
+are the same. Since we are assuming the ordered pairs are distinct, it follows that
+
